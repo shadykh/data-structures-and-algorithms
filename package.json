@@ -1,0 +1,26 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "## Table of Contents",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadykh/data-structures-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadykh/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/shadykh/data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  }
+}

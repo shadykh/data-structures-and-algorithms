@@ -36,9 +36,25 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 ![reversArray](reverseArray.png)
 
+#### ***Tests that applied***
+
+- [1, 2, 3]
+  - to equal ➡️ [3, 2, 1]
+- [50, 50, 12, 0]
+  - to equal ➡️ [0, 12, 50, 50]
+- [[2, 3], [4, 5], [6, 7]]
+  - to equal ➡️ [[6, 7], [4, 5], [2, 3]]
+- [0, 0 , 0, 0]
+  - to equal ➡️ [0, 0 , 0, 0]
+- [null, 0, 1, null, , 6]
+  - to equal ➡️ [6, , null, 1, 0, null]
+
+#### ***Prove of testing***
+
+- ![CodeChallengeClass2Test](CodeChallengeClass1Test.png)
+
 ### ***Approach & Efficiency***
 
 <br>
 
 - I took the same approach that explained above, and I choose it because it is the first time I did like this process, so I should be careful while doing it.
-
