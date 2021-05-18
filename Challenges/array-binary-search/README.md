@@ -1,6 +1,10 @@
-# Code Challenge: Class 01
+# ***Code Challenge: Class 03***
 
-## Reverse an array
+## ***Array binary search***
+
+### ***Feature Tasks***
+
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the value of the search key, or -1 if the element is not in the array.
 
 ### ***Whiteboard Challenge Workflow***
 
@@ -30,28 +34,34 @@ The steps in this document are meant to show you one solid workflow. It’s a st
         - some edge cases in how the data is structured; you’ll probably list several of these (the array is already sorted! the tree is very unbalanced! the string is just the character ‘a’ twelve times! etc.)
         - the input is null/negative/zero (the “normal” edge cases)
 
-### ***Illustration of those steps and the result of this Code Challenge; class:01***
+### ***Illustration of those steps and the result of this Code Challenge; class:03***
 
 <br>
 
-![reversArray](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/reverseArray.png)
+#### ***Whiteboard Challenge Workflow***
+
+![binarySearch](../../assets/array-binary-search.PNG)
 
 #### ***Tests that applied***
 
-- [1, 2, 3]
-  - to equal ➡️ [3, 2, 1]
-- [50, 50, 12, 0]
-  - to equal ➡️ [0, 12, 50, 50]
-- [[2, 3], [4, 5], [6, 7]]
-  - to equal ➡️ [[6, 7], [4, 5], [2, 3]]
-- [0, 0 , 0, 0]
-  - to equal ➡️ [0, 0 , 0, 0]
-- [null, 0, 1, null, , 6]
-  - to equal ➡️ [6, , null, 1, 0, null]
+- [4, 8, 15, 16, 23, 42], 15
+  - to equal ➡️ 2
+- [11, 22, 33, 44, 55, 66, 77], 90
+  - to equal ➡️ -1
+- [1, 2, 3, 5, 6, 7], 1
+  - to equal ➡️ 0
+- [0, 0, 0, 0] , 6
+  - to equal ➡️ -1
+- [null, 0, 1, null, , 6], 0
+  - to equal ➡️ 1
 
 #### ***Prove of testing***
 
-- ![CodeChallengeClass2Test](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/CodeChallengeClass1Test.PNG)
+- ![binarySearchTest](../../assets/array-binary-search-test.PNG)
+
+#### ***Testing Code***
+
+- [To See The Test Code Clicks Me 🧪](../../__test__/array-binary-search.test.js)
 
 ### ***Approach & Efficiency***
 
@@ -60,9 +70,6 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 - I took the same approach that explained above, and I choose it because it is the first time I did like this process, so I should be careful while doing it.
 
 
-<br>
-
----
 <br>
 
 ---
@@ -75,7 +82,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 |  **Code Challenge** </span> |  **Title**  |   **ToGo** |
 | ----------- | ----------- | ----------- |
-| Main | Back to the Main | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/CodeChallengeClass1/README.md) |
-| Class: 01 | Reverse an array | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/README_Class_1.md) |
-| Class: 02 | Array Shift | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/CodeChallengeClass2/README_Class_2.md) |
-| Class: 03 | Array Binary Search | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/CodeChallengeClass3/README_Class_2.md) |
+| Main | Back to the Main | [Clicks me](../../README.md) |
+| Class: 01 | Reverse an array | [Clicks me](../../Challenges/array-reverse/README.md) |
+| Class: 02 | Array Shift | [Clicks me](../../Challenges/array-shift/README.md) |
+| Class: 03 | Array Binary Search | [Clicks me](../../Challenges/array-binary-search/README.md) |

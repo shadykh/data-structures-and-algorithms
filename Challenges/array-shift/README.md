@@ -1,6 +1,11 @@
-# Code Challenge: Class 02
+# ***Code Challenge: Class 02***
 
-## Array Shift
+## ***Array Shift***
+
+### ***Feature Tasks***
+
+Write a function called insertShiftArray which takes in an array and a value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
+
 
 ### ***Whiteboard Challenge Workflow***
 
@@ -36,7 +41,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 #### ***Whiteboard Challenge Workflow***
 
-![insertShiftArray](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/insertShiftArray.PNG)
+![insertShiftArray](../../assets/array-shift.PNG)
 
 #### ***Tests that applied***
 
@@ -53,14 +58,17 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 #### ***Prove of testing***
 
-- ![CodeChallengeClass2Test](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/CodeChallengeClass2Test.PNG)
+- ![insertShiftArrayTest](../../assets/array-shift-test.PNG)
+
+#### ***Testing Code***
+
+- [To See The Test Code Clicks Me 🧪](../../__test__/array-shift.test.js)
 
 ### ***Approach & Efficiency***
 
 <br>
 
 - I took the same approach that explained above, and I choose it because it is the first time I did like this process, so I should be careful while doing it.
-
 
 <br>
 
@@ -74,7 +82,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 |  **Code Challenge** </span> |  **Title**  |   **ToGo** |
 | ----------- | ----------- | ----------- |
-| Main | Back to the Main | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/CodeChallengeClass1/README.md) |
-| Class: 01 | Reverse an array | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/README_Class_1.md) |
-| Class: 02 | Array Shift | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/CodeChallengeClass2/README_Class_2.md) |
-| Class: 03 | Array Binary Search | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/CodeChallengeClass3/README_Class_2.md) |
+| Main | Back to the Main | [Clicks me](../../README.md) |
+| Class: 01 | Reverse an array | [Clicks me](../../Challenges/array-reverse/README.md) |
+| Class: 02 | Array Shift | [Clicks me](../../Challenges/array-shift/README.md) |
+| Class: 03 | Array Binary Search | [Clicks me](../../Challenges/array-binary-search/README.md) |
