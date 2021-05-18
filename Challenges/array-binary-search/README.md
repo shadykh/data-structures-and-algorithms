@@ -42,6 +42,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 ![binarySearch](../../assets/array-binary-search.PNG)
 
+
 #### ***Tests that applied***
 
 - [4, 8, 15, 16, 23, 42], 15
