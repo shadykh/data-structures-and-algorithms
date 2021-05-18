@@ -1,6 +1,10 @@
-# Code Challenge: Class 01
+# ***Code Challenge: Class 01***
 
-## Reverse an array
+## ***Reverse an array***
+
+### ***Feature Tasks***
+
+Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
 ### ***Whiteboard Challenge Workflow***
 
@@ -34,7 +38,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 <br>
 
-![reversArray](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/reverseArray.png)
+![reversArray](../../assets/array-reverse.PNG)
 
 #### ***Tests that applied***
 
@@ -51,7 +55,12 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 #### ***Prove of testing***
 
-- ![CodeChallengeClass2Test](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/CodeChallengeClass1Test.PNG)
+- ![reverseArrayTest](../../assets/array-reverse-test.PNG)
+
+#### ***Testing Code***
+
+- [To See The Test Code Clicks Me 🧪](../../__test__/array-reverse.test.js)
+
 
 ### ***Approach & Efficiency***
 
@@ -60,6 +69,9 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 - I took the same approach that explained above, and I choose it because it is the first time I did like this process, so I should be careful while doing it.
 
 
+<br>
+
+---
 <br>
 
 ---
@@ -72,6 +84,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 |  **Code Challenge** </span> |  **Title**  |   **ToGo** |
 | ----------- | ----------- | ----------- |
-| Main | Back to the Main | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/README.md) |
-| Class: 01 | Reverse an array | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/README_Class_1.md) |
-| Class: 02 | Array Shift | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/README_Class_2.md) |
+| Main | Back to the Main | [Clicks me](../../README.md) |
+| Class: 01 | Reverse an array | [Clicks me](../../Challenges/array-reverse/README.md) |
+| Class: 02 | Array Shift | [Clicks me](../../Challenges/array-shift/README.md) |
+| Class: 03 | Array Binary Search | [Clicks me](../../Challenges/array-binary-search/README.md) |
