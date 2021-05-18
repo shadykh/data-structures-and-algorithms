@@ -1,6 +1,6 @@
-# Code Challenge: Class 01
+# Code Challenge: Class 03
 
-## Reverse an array
+## Array binary search
 
 ### ***Whiteboard Challenge Workflow***
 
@@ -30,28 +30,30 @@ The steps in this document are meant to show you one solid workflow. It’s a st
         - some edge cases in how the data is structured; you’ll probably list several of these (the array is already sorted! the tree is very unbalanced! the string is just the character ‘a’ twelve times! etc.)
         - the input is null/negative/zero (the “normal” edge cases)
 
-### ***Illustration of those steps and the result of this Code Challenge; class:01***
+### ***Illustration of those steps and the result of this Code Challenge; class:03***
 
 <br>
 
-![reversArray](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/reverseArray.png)
+#### ***Whiteboard Challenge Workflow***
+
+![binarySearch](./binarySearch.PNG)
 
 #### ***Tests that applied***
 
-- [1, 2, 3]
-  - to equal ➡️ [3, 2, 1]
-- [50, 50, 12, 0]
-  - to equal ➡️ [0, 12, 50, 50]
-- [[2, 3], [4, 5], [6, 7]]
-  - to equal ➡️ [[6, 7], [4, 5], [2, 3]]
-- [0, 0 , 0, 0]
-  - to equal ➡️ [0, 0 , 0, 0]
-- [null, 0, 1, null, , 6]
-  - to equal ➡️ [6, , null, 1, 0, null]
+- [1, 2, 3], 5
+  - to equal ➡️ [ 1, 2, 5, 3 ]
+- [42,8,15,23,42], 16
+  - to equal ➡️ [ 42, 8, 15, 16, 23, 42 ]
+- [[2, 3], [4, 5], [6, 7]], 20
+  - to equal ➡️ [[ 2, 3 ], [ 4, 5 ], 20, [ 6, 7 ]]
+- [0, 0 , 0, 0], 4
+  - to equal ➡️ [ 0, 0, 4, 0, 0 ]
+- [null, 0, 1, null, , 6], 36
+  - to equal ➡️ [ null, 0, 1, 36, null, , 6 ]
 
 #### ***Prove of testing***
 
-- ![CodeChallengeClass2Test](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/CodeChallengeClass1Test.PNG)
+- ![CodeChallengeClass3Test](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/CodeChallengeClass3/CodeChallengeClass3Test.PNG)
 
 ### ***Approach & Efficiency***
 
@@ -72,6 +74,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 |  **Code Challenge** </span> |  **Title**  |   **ToGo** |
 | ----------- | ----------- | ----------- |
-| Main | Back to the Main | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/README.md) |
+| Main | Back to the Main | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/CodeChallengeClass1/README.md) |
 | Class: 01 | Reverse an array | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/README_Class_1.md) |
-| Class: 02 | Array Shift | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/README_Class_2.md) |
+| Class: 02 | Array Shift | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/CodeChallengeClass2/README_Class_2.md) |
+| Class: 03 | Array Binary Search | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/CodeChallengeClass3/README_Class_2.md) |

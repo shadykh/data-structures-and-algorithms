@@ -44,7 +44,7 @@ I will test the insertShiftArray function by passing those arrays:
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('CodeChallengeClass1', () => {
+describe('CodeChallengeClass2', () => {
   test('It should return the same array but added the number in the middle', () => {
     expect(insertShiftArray([1, 2, 3], 5)).toStrictEqual([ 1, 2, 5, 3 ]);
     expect(insertShiftArray([42,8,15,23,42], 16)).toStrictEqual([ 42, 8, 15, 16, 23, 42 ]);
