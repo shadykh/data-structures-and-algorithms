@@ -36,7 +36,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 #### ***Whiteboard Challenge Workflow***
 
-![insertShiftArray](insertShiftArray.png)
+![insertShiftArray](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/insertShiftArray.PNG)
 
 #### ***Tests that applied***
 
@@ -53,10 +53,27 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 #### ***Prove of testing***
 
-- ![CodeChallengeClass2Test](CodeChallengeClass2Test.png)
+- ![CodeChallengeClass2Test](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/main/js/CodeChallengeClass2Test.PNG)
 
 ### ***Approach & Efficiency***
 
 <br>
 
 - I took the same approach that explained above, and I choose it because it is the first time I did like this process, so I should be careful while doing it.
+
+
+<br>
+
+---
+
+<br>
+
+## Table of Contents
+
+<br>
+
+|  **Code Challenge** </span> |  **Title**  |   **ToGo** |
+| ----------- | ----------- | ----------- |
+| Main | Back to the Main | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/README.md) |
+| Class: 01 | Reverse an array | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/README_Class_1.md) |
+| Class: 02 | Array Shift | [Clicks me](https://github.com/shadykh/data-structures-and-algorithms/blob/main/js/README_Class_2.md) |
