@@ -16,6 +16,11 @@ at the middle index.
 
 
 function insertShiftArray(arr, num){
+  
+  if(!arr || !num || typeof(arr)=== 'string'){
+    throw new Error('⚠️You did not insert any valid value !!!⚠️');
+  }
+
   let localArr = [];
   let midIndex = Math.ceil(arr.length/2);
    for(let i =0; i<arr.length;i++){
