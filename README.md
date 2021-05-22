@@ -10,3 +10,4 @@
 | Class: 01 | Reverse an array | [Clicks me](/Challenges/array-reverse/README.md) |
 | Class: 02 | Array Shift | [Clicks me](/Challenges/array-shift/README.md) |
 | Class: 03 | Array Binary Search | [Clicks me](/Challenges/array-binary-search/README.md) |
+| Class: 05 | LinkedList | [Clicks me](/Data-Structures/JavaScript/linkedList/README.md) |
