@@ -14,7 +14,12 @@ return an array with elements in reversed order.
 
 
 function reversArray(arr){
-    let localArr = [];
+    
+  if(!arr || typeof(arr)=== 'string'){
+    throw new Error('⚠️You did not insert any valid value !!!⚠️');
+  }
+
+  let localArr = [];
     for(let i =0; i<arr.length;i++){
       localArr.push(arr[arr.length-(i+1)]);
     }

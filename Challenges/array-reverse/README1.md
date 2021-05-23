@@ -1,31 +1,12 @@
 # ***Code Challenge: Class 01***
-# ***Reverse an array***
 
-## Index
+## ***Reverse an array***
 
-- [Feature Tasks](#Feature-Tasks)
-- [Whiteboard Challenge Workflow](#Whiteboard-Challenge-Workflow)
-- [Illustration of those steps and the result of this Code Challenge; class 01](#Illustration-of-those-steps-and-the-result-of-this-Code-Challenge;-class-02)
-  - [Whiteboard](#Whiteboard)
-  - [Tests that applied](#Tests-that-applied)
-  - [Run the test](#Run-the-test)
-  - [Prove of testing](#Prove-of-testing)
-  - [Testing Code](#Testing-Code)
-  - [Approach & Efficiency](#Approach-&-Efficiency)
-- [Table of Contents](#Table-of-Contents)
+### ***Feature Tasks***
 
----
+Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
-
-
-## ***Feature Tasks***
-
-- [x] Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order
-
-**[⬆ Back to Index](#index)**
-
----
-## ***Whiteboard Challenge Workflow***
+### ***Whiteboard Challenge Workflow***
 
 The steps in this document are meant to show you one solid workflow. It’s a structure that works for most people to help them solve whiteboarding problems effectively.
 
@@ -53,71 +34,32 @@ The steps in this document are meant to show you one solid workflow. It’s a st
         - some edge cases in how the data is structured; you’ll probably list several of these (the array is already sorted! the tree is very unbalanced! the string is just the character ‘a’ twelve times! etc.)
         - the input is null/negative/zero (the “normal” edge cases)
 
-**[⬆ Back to Index](#index)**
-
----
-
-# ***Illustration of those steps and the result of this Code Challenge; class 02***
+### ***Illustration of those steps and the result of this Code Challenge; class:01***
 
 <br>
 
-
-### **Whiteboard**
-
-- Array Shift function:
-![insertShiftArray](../../assets/array-shift.PNG)
-
-**[⬆ Back to Index](#index)**
-
----
+![reversArray](../../assets/array-reverse.PNG)
 
 #### ***Tests that applied***
 
-- Standers test:
-  - [1, 2, 3]
-  - [50, 50, 12, 0]
-  - [[2, 3], [4, 5], [6, 7]]
-  - [0, 0 , 0, 0]
-  - [null, 0, 1, null, , 6]
-
-- Edge cases:
-  - passing an empty array
-    - []
-  - passing a null
-    - null
-  - passing a string instead of array
-    - 'test'
-
-**[⬆ Back to Index](#index)**
-
----
-
-
-#### ***Run the test***
-
-- `npm test array-reverse.test.js`
-
-**[⬆ Back to Index](#index)**
-
----
-
+- [1, 2, 3]
+  - to equal ➡️ [3, 2, 1]
+- [50, 50, 12, 0]
+  - to equal ➡️ [0, 12, 50, 50]
+- [[2, 3], [4, 5], [6, 7]]
+  - to equal ➡️ [[6, 7], [4, 5], [2, 3]]
+- [0, 0 , 0, 0]
+  - to equal ➡️ [0, 0 , 0, 0]
+- [null, 0, 1, null, , 6]
+  - to equal ➡️ [6, , null, 1, 0, null]
 
 #### ***Prove of testing***
 
-- ![insertShiftArrayTest](../../assets/array-shift-test.PNG)
-
-**[⬆ Back to Index](#index)**
-
----
-
+- ![reverseArrayTest](../../assets/array-reverse-test.PNG)
 
 #### ***Testing Code***
 
 - [To See The Test Code Clicks Me 🧪](../../__test__/array-reverse.test.js)
-
-**[⬆ Back to Index](#index)**
-
----
 
 
 ### ***Approach & Efficiency***
@@ -126,16 +68,15 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 - I took the same approach that explained above, and I choose it because it is the first time I did like this process, so I should be careful while doing it.
 
-<br>
-
 
 <br>
 
-**[⬆ Back to Index](#index)**
-
+---
+<br>
 
 ---
 
+<br>
 
 ## Table of Contents
 
@@ -143,8 +84,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 |  **Code Challenge** </span> |  **Title**  |   **ToGo** |
 | ----------- | ----------- | ----------- |
-| Main | Back to the Main | [Clicks me](../../../README.md) |
+| Main | Back to the Main | [Clicks me](../../README.md) |
 | Class: 01 | Reverse an array | [Clicks me](../../Challenges/array-reverse/README.md) |
 | Class: 02 | Array Shift | [Clicks me](../../Challenges/array-shift/README.md) |
 | Class: 03 | Array Binary Search | [Clicks me](../../Challenges/array-binary-search/README.md) |
-| Class: 05 | LinkedList | [Clicks me](README.md) |
