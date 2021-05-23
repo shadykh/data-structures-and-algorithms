@@ -5,7 +5,7 @@
 
 - [Feature Tasks](#Feature-Tasks)
 - [Whiteboard Challenge Workflow](#Whiteboard-Challenge-Workflow)
-- [Illustration of those steps and the result of this Code Challenge; class 01](#Illustration-of-those-steps-and-the-result-of-this-Code-Challenge;-class-02)
+- [Illustration of those steps and the result of this Code Challenge; class 01](#Illustration-of-those-steps-and-the-result-of-this-Code-Challenge;-class-01)
   - [Whiteboard](#Whiteboard)
   - [Tests that applied](#Tests-that-applied)
   - [Run the test](#Run-the-test)
@@ -57,15 +57,15 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 ---
 
-# ***Illustration of those steps and the result of this Code Challenge; class 02***
+# ***Illustration of those steps and the result of this Code Challenge; class 01***
 
 <br>
 
 
 ### **Whiteboard**
 
-- Array Shift function:
-![insertShiftArray](../../assets/array-shift.PNG)
+- Reverse Array function:
+![array-reverse](../../assets/array-reverse.PNG)
 
 **[⬆ Back to Index](#index)**
 
@@ -104,7 +104,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 #### ***Prove of testing***
 
-- ![insertShiftArrayTest](../../assets/array-shift-test.PNG)
+- ![array-reverse](../../assets/array-reverse-test.PNG)
 
 **[⬆ Back to Index](#index)**
 
