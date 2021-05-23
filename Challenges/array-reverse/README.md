@@ -65,7 +65,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 ### **Whiteboard**
 
 - Reverse Array function:
-- ![array-reverse](../../assets/array-reverse.PNG)
+- ![array-reverse](https://raw.githubusercontent.com/shadykh/data-structures-and-algorithms/array-reverse/assets/array-reverse.png)
 
 **[⬆ Back to Index](#index)**
 
