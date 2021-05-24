@@ -11,16 +11,16 @@ Code Challenge => Class:05
 
 Define those methods:
 *insert: 
-     which takes any value as an argument
-     and adds a new node with that value to the head of the
-     list with an O(1) Time performance.
+    which takes any value as an argument
+    and adds a new node with that value to the head of the
+    list with an O(1) Time performance.
 *includes:
-     which takes any value as an argument and returns
-     a boolean result depending on whether that value exists
-     as a Node’s value somewhere within the list.
+    which takes any value as an argument and returns
+    a boolean result depending on whether that value exists
+    as a Node’s value somewhere within the list.
 *toString:
-     which takes in no arguments and returns a string
-     representing all the values in the Linked List, formatted as:
+    which takes in no arguments and returns a string
+    representing all the values in the Linked List, formatted as:
         ?-> { a } -> { b } -> { c } -> NULL
 ! v1.1.6
 *append: 
@@ -32,7 +32,13 @@ Define those methods:
  *insertAfter:
     which add a new node with the given newValue
     immediately after the first value node
-
+*kthFromEnd: 
+    Write a method for the Linked List class which 
+    takes a number, k, as a parameter. Return the node’s
+    value that is k from the end of the linked list. You 
+    have access to the Node class and all the properties on
+    the Linked List class as well as the methods created in
+    previous challenges.
 
 Testing
 * v1.1.5
@@ -59,7 +65,16 @@ Testing
     - If pass not valid value in append method
     - If pass not valid value in insertAfter method
     - If pass not valid value in insertBefore method
-
+* v1.1.7
+- Where k is greater than the length of the linked list ?
+- Where k and the length of the list are the same ?
+- Where k is not a positive integer ?
+- Where the linked list is of a size 1 ?
+- “Happy Path” where k is not at the end, but somewhere in the middle of the linked list ?
+- Edge cases / custom error:
+    - If pass a null value in kthFromEnd method
+    - If pass an empty value in kthFromEnd method
+    - If pass a string value in kthFromEnd method
 
 ------------------------------------------------------------------------------------------------ */
 
@@ -294,7 +309,6 @@ describe('Code Challenge: Class 06: Linked List Implementation', () => {
 });
 
 
-
 describe('Code Challenge: Class 06: Throw a custom errors / edge cases', () => {
 
     it('TEST 1 🧪: If pass not valid value in an append method, to throw error ---> ⚠️You did not pass any valid value !!!⚠️', () => {
@@ -334,6 +348,143 @@ describe('Code Challenge: Class 06: Throw a custom errors / edge cases', () => {
             newLinkedList.insertAfter(value, newValue);
         } catch (error) {
             expect(error.message).toBe("⚠️You did not pass any valid value !!!⚠️");
+        }
+
+    });
+});
+
+
+describe('Code Challenge: Class 07', () => {
+
+    it('TEST 1 🧪: Should return the value without any error when it is in the range of the linkedList! [“Happy Path”]', () => {
+
+        let newLinkedList = new LinkedList();
+        let firstValue = 10;
+        let secondValue = 20;
+        let thirdValue = 1;
+        let k = 0;
+
+        newLinkedList.insert(firstValue);
+        newLinkedList.insert(secondValue);
+        newLinkedList.insert(thirdValue);
+
+        expect(newLinkedList.kthFromEnd(k)).toEqual(10);
+
+    });
+
+    it('TEST 2 🧪: Should return error [Where k is greater than the length of the linked list] => ⚠️The value ${k} is Greater than the linkedList Length⚠️', () => {
+        let k = 4;
+        try {
+            let newLinkedList = new LinkedList();
+            let firstValue = 10;
+            let secondValue = 20;
+            let thirdValue = 1;
+    
+            newLinkedList.insert(firstValue);
+            newLinkedList.insert(secondValue);
+            newLinkedList.insert(thirdValue);
+            newLinkedList.kthFromEnd(k);
+        } catch (error) {
+            expect(error.message).toBe(`⚠️The value ${k} is Greater than the linkedList Length⚠️`);
+        }
+
+    });
+
+    it('TEST 3 🧪: Should return the value without any error  [Where k and the length of the list are the same ?] => ⚠️The value ${k} is Greater than the linkedList Length⚠️', () => {
+        
+        let k = 3;
+
+        let newLinkedList = new LinkedList();
+        let firstValue = 10;
+        let secondValue = 20;
+        let thirdValue = 1;
+    
+        newLinkedList.insert(firstValue);
+        newLinkedList.insert(secondValue);
+        newLinkedList.insert(thirdValue);
+
+        expect(newLinkedList.kthFromEnd(k)).toEqual(1);
+
+    });
+
+    it('TEST 4 🧪: Should return error [Where k is not a positive integer ?] => ⚠️The value ${k} is not a positive integer⚠️', () => {
+        let k = -3;
+        try {
+            let newLinkedList = new LinkedList();
+            let firstValue = 10;
+            let secondValue = 20;
+            let thirdValue = 1;
+    
+            newLinkedList.insert(firstValue);
+            newLinkedList.insert(secondValue);
+            newLinkedList.insert(thirdValue);
+            newLinkedList.kthFromEnd(k);
+        } catch (error) {
+            expect(error.message).toBe(`⚠️The value ${k} is not a positive integer⚠️`);
+        }
+
+    });
+
+    it('TEST 5 🧪: Should return the value without any error [Where the linked list is of a size 1] => ⚠️The value ${k} is Greater than the linkedList Length⚠️', () => {
+        let k = 1;
+
+        let newLinkedList = new LinkedList();
+        let firstValue = 10;
+    
+        newLinkedList.insert(firstValue);
+
+        expect(newLinkedList.kthFromEnd(k)).toEqual(10);
+    });
+    
+});
+
+
+describe('Code Challenge: Class 07: Throw a custom errors / edge cases', () => {
+
+    it('TEST 1 🧪: Should return error [Where k is not a valid value {null} ?] => ⚠️The value of k is not a valid value⚠️', () => {
+
+        let k = null;
+        try {
+            let newLinkedList = new LinkedList();
+            let firstValue = 10;
+    
+            newLinkedList.insert(firstValue);
+
+            newLinkedList.kthFromEnd(k);
+        } catch (error) {
+            expect(error.message).toBe(`⚠️The value of k is not a valid value⚠️`);
+        }
+
+    });
+
+    it('TEST 2 🧪: Should return error [Where k is not a valid value {empty} ?] => ⚠️The value of k is not a valid value⚠️', () => {
+
+        let k = '';
+        try {
+            let newLinkedList = new LinkedList();
+            let firstValue = 10;
+    
+            newLinkedList.insert(firstValue);
+
+            newLinkedList.kthFromEnd(k);
+        } catch (error) {
+            expect(error.message).toBe(`⚠️The value of k is not a valid value⚠️`);
+        }
+
+    });
+
+    it('TEST 3 🧪: Should return error [Where k is not a valid value {string} ?] => ⚠️The value of k is not a valid value⚠️', () => {
+
+        let k = 'null';
+        try {
+            let newLinkedList = new LinkedList();
+            let firstValue = 10;
+    
+            newLinkedList.insert(firstValue);
+
+            newLinkedList.kthFromEnd(k);
+        } catch (error) {
+            expect(error.message).toBe(`⚠️The value of k is not a valid value⚠️`);
         }
 
     });
