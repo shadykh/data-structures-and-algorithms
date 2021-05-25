@@ -31,6 +31,14 @@ const Node = require('./node.js');
  *  *insertAfter:
  *      which add a new node with the given newValue
  *      immediately after the first value node
+ * ! v1.1.7
+ *  *kthFromEnd: 
+ *      Write a method for the Linked List class which 
+ *      takes a number, k, as a parameter. Return the node’s
+ *      value that is k from the end of the linked list. You 
+ *      have access to the Node class and all the properties on
+ *      the Linked List class as well as the methods created in
+ *      previous challenges.
  */
 class LinkedList {
 
@@ -187,6 +195,46 @@ class LinkedList {
         return this;
 
     }
+
+    kthFromEnd(k){
+
+        if (k < 0){
+            throw new Error(`⚠️The value ${k} is not a positive integer⚠️`);
+        }
+
+        if (k !==0 && !k || typeof(k) === 'string'){
+            throw new Error('⚠️The value of k is not a valid value⚠️');
+        }
+
+        let linkedList = this.head;
+
+        let linkedListLength = 0;
+
+        while(linkedList){
+            linkedListLength++;
+            linkedList = linkedList.next;
+        }
+
+        if (k > linkedListLength) {
+            throw new Error(`⚠️The value ${k} is Greater than the linkedList Length⚠️`);
+        }
+
+        linkedList = this.head;
+
+        let goodK = k;
+
+        if (k === linkedListLength){
+            goodK = k-1;
+        }
+
+        while(linkedListLength-1 != goodK){
+            linkedListLength--;
+            linkedList = linkedList.next;
+        }
+
+
+        return linkedList.value
+}
 
 }
 

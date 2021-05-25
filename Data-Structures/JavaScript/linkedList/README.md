@@ -1,4 +1,4 @@
-# ***Code Challenge: Class 05 and class 06***
+# ***Code Challenge: Class 05, class 06 and class 07***
 
 # ***LinkedList***
 
@@ -6,7 +6,7 @@
 
 - [Feature Tasks](#Feature-Tasks)
 - [Whiteboard Challenge Workflow](#Whiteboard-Challenge-Workflow)
-- [Illustration of those steps and the result of this Code Challenge; class:05 and class 06](#Illustration-of-those-steps-and-the-result-of-this-Code-Challenge;-class-05-and-class-06)
+- [Code Challenge: Class 05, class 06 and class 07](#Illustration-of-those-steps-and-the-result-of-this-Code-Challenge;-class-05-class-06-and-class-07)
   - [Whiteboard](#Whiteboard)
   - [Tests that applied](#Tests-that-applied)
   - [Run the test](#Run-the-test)
@@ -33,6 +33,10 @@
 - [x] `.append(value)` which adds a new node with the given `value` to the end of the list.
 - [x] `.insertBefore(value, newVal)` which add a new node with the given `newValue` immediately before the first `value` node.
 - [x] `.insertAfter(value, newVal)` which add a new node with the given `newValue` immediately after the first `value` node.
+
+## v1.1.7
+
+- [x] Write a method for the Linked List class which takes a number, `k`, as a parameter. Return the node’s value that is `k` from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 **[⬆ Back to Index](#index)**
 
@@ -94,6 +98,11 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 - `insertAfter` method:
   - ![linked-list-toString](../../../assets/linked-list-insertAfter.PNG)
 
+## v1.1.7
+
+- `kthFromEnd` method:
+  - ![kthFromEnd](../../../assets/kthFromEnd.PNG)
+
 **[⬆ Back to Index](#index)**
 
 #### ***Tests that applied***
@@ -126,6 +135,18 @@ The steps in this document are meant to show you one solid workflow. It’s a st
   - If pass not valid value in insertAfter method
   - If pass not valid value in insertBefore method
 
+## v1.1.7
+
+- Where k is greater than the length of the linked list ?
+- Where k and the length of the list are the same ?
+- Where k is not a positive integer ?
+- Where the linked list is of a size 1 ?
+- “Happy Path” where k is not at the end, but somewhere in the middle of the linked list ?
+- Edge cases / custom error:
+  - If pass a null value in kthFromEnd method
+  - If pass an empty value in kthFromEnd method
+  - If pass a string value in kthFromEnd method
+
 **[⬆ Back to Index](#index)**
 
 #### ***Prove of testing***
@@ -138,14 +159,17 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 - ![linked-list-test-v1.1.6](../../../assets/linked-list-test-v1.1.6.PNG)
 
+## v1.1.7
+
+- ![kthFromEnd-test](../../../assets/kthFromEnd-test.PNG)
+
 **[⬆ Back to Index](#index)**
 
 #### ***Testing Code***
 
-## v1.1.5 & v1.1.6
+## v1.1.5, v1.1.6 & v1.1.7
 
 - [To See The Test Code Clicks Me 🧪](../../../__test__/linked-list.test.js)
-
 
 **[⬆ Back to Index](#index)**
 
@@ -174,4 +198,4 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 | Class: 01 | Reverse an array | [Clicks me](../../Challenges/array-reverse/README.md) |
 | Class: 02 | Array Shift | [Clicks me](../../Challenges/array-shift/README.md) |
 | Class: 03 | Array Binary Search | [Clicks me](../../Challenges/array-binary-search/README.md) |
-| Class: 05 & 06 | LinkedList | [Clicks me](README.md) |
+| Class: 05, 06 & 07 | LinkedList | [Clicks me](README.md) |
