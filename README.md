@@ -11,3 +11,4 @@
 | Class: 02 | Array Shift | [Clicks me](/Challenges/array-shift/README.md) |
 | Class: 03 | Array Binary Search | [Clicks me](/Challenges/array-binary-search/README.md) |
 | Class: 05, 06 & 07 | LinkedList | [Clicks me](/Data-Structures/JavaScript/linkedList/README.md) |
+| Class: 08 | Zip two linked lists | [Clicks me](/Challenges/llZip/README.md) |
