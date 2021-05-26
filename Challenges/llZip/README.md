@@ -1,11 +1,12 @@
-# ***Code Challenge: Class 02***
-# ***Array Shift***
+# ***Code Challenge: Class 08***
+
+# ***Zip two linked lists***
 
 ## Index
 
 - [Feature Tasks](#Feature-Tasks)
 - [Whiteboard Challenge Workflow](#Whiteboard-Challenge-Workflow)
-- [Illustration of those steps and the result of this Code Challenge; class](#Illustration-of-those-steps-and-the-result-of-this-Code-Challenge;-class-02)
+- [Code Challenge: Class 08](#Illustration-of-those-steps-and-the-result-of-this-Code-Challenge;-class-08)
   - [Whiteboard](#Whiteboard)
   - [Tests that applied](#Tests-that-applied)
   - [Run the test](#Run-the-test)
@@ -16,15 +17,14 @@
 
 ---
 
-
-
 ## ***Feature Tasks***
 
-- [x] Write a function called insertShiftArray which takes in an array and a value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
+## V1.1.5
+
+- [x] Write a function called zipLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 **[⬆ Back to Index](#index)**
 
----
 ## ***Whiteboard Challenge Workflow***
 
 The steps in this document are meant to show you one solid workflow. It’s a structure that works for most people to help them solve whiteboarding problems effectively.
@@ -55,72 +55,53 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 **[⬆ Back to Index](#index)**
 
----
-
-# ***Illustration of those steps and the result of this Code Challenge; class 02***
+## ***Illustration of those steps and the result of this Code Challenge; class:08***
 
 <br>
 
-
 ### **Whiteboard**
 
-- Array Shift function:
-![insertShiftArray](../../assets/array-shift.PNG)
+- `llZip` function:
+  - ![llZip](../../assets/llZip.jpg)
 
 **[⬆ Back to Index](#index)**
-
----
 
 #### ***Tests that applied***
 
-- Standers test:
-  - [1, 2, 3], 5
-  - [42,8,15,23,42], 16
-  - [[2, 3], [4, 5], [6, 7]], 20
-  - [0, 0 , 0, 0], 4
-  - [null, 0, 1, null, , 6], 36
+- Happy path 😄:
+  - two valid linkedList and should return the zipped version of them
+    - [1, 3, 2] ⚡ [5, 9, 4] ➡️ [1, 5, 3, 9, 4, 2]
 
 - Edge cases:
-  - Passing empty array:
-    - [], 2
-  - Passing a null/empty parameters:
-    - null, null
-    - [], null
-    - [1, 2], null
-  - Passing a string instead of array:
-    - 'Test', 2
+  - Passing first one as a null linkedList:
+    - null, [5, 9, 4]
+  - Passing second one as a null linkedList:
+    -[1, 3, 2], null
+  - Passing both of them as a null linkedList:
+    -null, null
+  - Passing first one as an empty linkedList:
+    - '', [5, 9, 4]
+  - Passing second one as an empty linkedList:
+    -[1, 3, 2], ''
+  - Passing both of them as an empty linkedList:
+    -'', ''
+
 
 **[⬆ Back to Index](#index)**
-
----
-
-
-#### ***Run the test***
-
-- `npm test array-shift.test.js`
-
-**[⬆ Back to Index](#index)**
-
----
-
 
 #### ***Prove of testing***
 
-- ![insertShiftArrayTest](../../assets/array-shift-test.PNG)
+
+- ![llZipTest](../../assets/llZipTest.PNG)
 
 **[⬆ Back to Index](#index)**
-
----
-
 
 #### ***Testing Code***
 
-- [To See The Test Code Clicks Me 🧪](../../__test__/array-shift.test.js)
+
+- [To See The Test Code Clicks Me 🧪](../../__test__/ll-zip.test.js)
 
 **[⬆ Back to Index](#index)**
-
----
-
 
 ### ***Approach & Efficiency***
 
@@ -130,14 +111,12 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 <br>
 
+**[⬆ Back to Index](#index)**
+---
 
 <br>
 
-**[⬆ Back to Index](#index)**
-
-
----
-
+<br>
 
 ## Table of Contents
 
@@ -149,4 +128,5 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 | Class: 01 | Reverse an array | [Clicks me](../../Challenges/array-reverse/README.md) |
 | Class: 02 | Array Shift | [Clicks me](../../Challenges/array-shift/README.md) |
 | Class: 03 | Array Binary Search | [Clicks me](../../Challenges/array-binary-search/README.md) |
-| Class: 05 | LinkedList | [Clicks me](README.md) |
+| Class: 05, 06 & 07 | LinkedList | [Clicks me](README.md) |
+| Class: 08| LinkedList | [Clicks me](README.md) |
