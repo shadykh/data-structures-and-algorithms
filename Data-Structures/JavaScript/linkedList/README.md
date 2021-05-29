@@ -76,6 +76,7 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 ### **Whiteboard**
 
+> Now added the edge cases sections to the whiteboard.
 ## v1.1.5
 
 - `insert` method:
