@@ -13,3 +13,4 @@
 | Class: 05, 06 & 07 | LinkedList | [Clicks me](/Data-Structures/JavaScript/linkedList/README.md) |
 | Class: 08 | Zip two linked lists | [Clicks me](/Challenges/llZip/README.md) |
 | Class: 10 | Stacks and Queues | [Clicks me](/Data-Structures/JavaScript/stacksAndQueues/README.md) |
+| Class: 11 | PseudoQueue | [Clicks me](/Challenges/queueWithStacks/README.md) |
