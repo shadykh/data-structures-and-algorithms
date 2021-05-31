@@ -14,3 +14,4 @@
 | Class: 08 | Zip two linked lists | [Clicks me](/Challenges/llZip/README.md) |
 | Class: 10 | Stacks and Queues | [Clicks me](/Data-Structures/JavaScript/stacksAndQueues/README.md) |
 | Class: 11 | PseudoQueue | [Clicks me](/Challenges/queueWithStacks/README.md) |
+| Class: 12 | Animal Shelter | [Clicks me](/Challenges/fifoAnimalShelter/README.md) |
