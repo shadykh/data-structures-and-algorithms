@@ -61,6 +61,9 @@ describe('Code Challenge Class 13', () => {
         test('TEST 4 🧪: Only one side bracket [one character] ', () => {
             expect(multiBracketValidation('{')).toStrictEqual(false);
         })
+        test('TEST 5 🧪: Grading TEST [{}{Code}[Fellows]([()})] to be false ', () => {
+            expect(multiBracketValidation('{}{Code}[Fellows]([()})')).toStrictEqual(false);
+        })
     })
     describe('Edge Cases/ Custom Errors', () => {
         test('TEST 1 🧪: Passing a null value! ', () => {
