@@ -11,11 +11,11 @@ class AnimalShelter{
     enqueue(animal){
         if(!animal){return '⚠️The passing value is not valid.⚠️'};
 
-        if (animal === 'dog'){
+        if (animal.type === 'dog'){
             return this.dog.enqueue(animal);
         }
 
-        if (animal === 'cat'){
+        if (animal.type === 'cat'){
             return this.cat.enqueue(animal);
         }
     }
@@ -23,11 +23,11 @@ class AnimalShelter{
     dequeue(pref){
         if(!pref){return '⚠️The passing pref is not valid.⚠️'};
 
-        if(pref === 'dog'){
+        if(pref.type === 'dog'){
             return this.dog.dequeue();
         }
 
-        if(pref === 'cat'){
+        if(pref.type === 'cat'){
             return this.dog.dequeue();
         }
 
