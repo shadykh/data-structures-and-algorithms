@@ -48,7 +48,7 @@ describe('TEST: Code Challenge Class 11 ', () => {
             pseudoQueue.enqueue(value1);
             pseudoQueue.enqueue(value2);
 
-            expect(pseudoQueue.firstStack.top.value).toEqual(value2);
+            expect(pseudoQueue.dequeue()).toEqual(value1);
 
         });
 
@@ -60,7 +60,7 @@ describe('TEST: Code Challenge Class 11 ', () => {
             pseudoQueue.enqueue(value1);
             pseudoQueue.enqueue(value2);
 
-            expect(pseudoQueue.dequeue()).toEqual(value2);
+            expect(pseudoQueue.dequeue()).toEqual(value1);
 
         });
 
@@ -74,7 +74,7 @@ describe('TEST: Code Challenge Class 11 ', () => {
 
             pseudoQueue.dequeue();
 
-            expect(pseudoQueue.dequeue()).toEqual(value1);
+            expect(pseudoQueue.dequeue()).toEqual(value2);
 
         });
 
