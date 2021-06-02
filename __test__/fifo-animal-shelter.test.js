@@ -30,7 +30,7 @@ describe('TEST: Code Challenge Class 12 ', () => {
     describe('TEST: AnimalShelter ', () => {
         test('TEST 1 🧪: Can successfully enqueue a dog into a AnimalShelter?', () => {
 
-            let animal = 'dog';
+            let animal = {name: 'Joe', type: 'dog'};
 
             let animalShelter = new AnimalShelter();
 
@@ -42,7 +42,7 @@ describe('TEST: Code Challenge Class 12 ', () => {
 
         test('TEST 2 🧪: Can successfully enqueue a cat into a AnimalShelter?', () => {
 
-            let animal = 'cat';
+            let animal = {name: 'Jorge', type: 'cat'};
 
             let animalShelter = new AnimalShelter();
 
@@ -54,7 +54,7 @@ describe('TEST: Code Challenge Class 12 ', () => {
 
         test('TEST 3 🧪: Can successfully enqueue multiple animals into a AnimalShelter?', () => {
 
-            let [animal1, animal2, animal3, animal4,] = ['dog', 'cat', 'dog', 'cat'];
+            let [animal1, animal2, animal3, animal4,] = [{name: 'Joe', type: 'dog'}, {name: 'Jorge', type: 'cat'}, {name: 'Max', type: 'dog'}, {name: 'Min', type: 'cat'}];
 
             let animalShelter = new AnimalShelter();
 
@@ -71,20 +71,20 @@ describe('TEST: Code Challenge Class 12 ', () => {
         test('TEST 4 🧪: Can successfully dequeue off the AnimalShelter?', () => {
 
 
-            let animal1 = 'cat';
-            let animal2 = 'dog';
+            let animal1 = {name: 'Joe', type: 'dog'};
+            let animal2 = {name: 'Jorge', type: 'cat'};
 
             let animalShelter = new AnimalShelter();
 
-            animalShelter.enqueue('cat');
-            animalShelter.enqueue('dog');
+            animalShelter.enqueue(animal2);
+            animalShelter.enqueue(animal1);
 
-            expect(animalShelter.dequeue(animal1)).toEqual(animal2);
+            expect(animalShelter.dequeue(animal1)).toEqual(animal1);
         });
 
         test('TEST 5 🧪: Can successfully empty a AnimalShelter after multiple dequeue?', () => {
 
-            let [animal1, animal2, animal3, animal4,] = ['dog', 'cat', 'dog', 'cat'];
+            let [animal1, animal2, animal3, animal4,] = [{name: 'Joe', type: 'dog'}, {name: 'Jorge', type: 'cat'}, {name: 'Max', type: 'dog'}, {name: 'Min', type: 'cat'}];
 
             let animalShelter = new AnimalShelter();
 
@@ -113,8 +113,9 @@ describe('TEST: Code Challenge Class 12 ', () => {
         test('TEST 7 🧪: Calling dequeue without [dog or cat => anything else] on AnimalShelter return null', () => {
 
             try {
+                let animal1 = {name: 'Joe', type: 'cow'};
                 let animalShelter = new AnimalShelter();
-                animalShelter.dequeue('cow')
+                animalShelter.dequeue(animal1)
             } catch (error) {
                 expect(error.message).toBe(null)
             }
