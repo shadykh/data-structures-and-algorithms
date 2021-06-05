@@ -16,3 +16,4 @@
 | Class: 11 | PseudoQueue | [Clicks me](/Challenges/queueWithStacks/README.md) |
 | Class: 12 | Animal Shelter | [Clicks me](/Challenges/fifoAnimalShelter/README.md) |
 | Class: 13 | Multi Bracket Validation| [Clicks me](/Challenges/multiBracketValidation/README.md) |
+| Class: 15 | Trees| [Clicks me](/Data-Structures/JavaScript/tree/README.md) |
