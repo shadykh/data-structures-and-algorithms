@@ -4,145 +4,145 @@ const Node = require('./node.js');
 
 class BinaryTree {
 
-    constructor(root = null) {
+  constructor(root = null) {
 
-        this.root = root;
+    this.root = root;
 
-    }
+  }
 
-    preOrder() {
+  preOrder() {
 
-        let outputArray = [];
+    let outputArray = [];
 
-        let traverse = (node) => {
+    let traverse = (node) => {
 
-            outputArray.push(node.value);
+      outputArray.push(node.value);
 
-            if (node.left) traverse(node.left);
+      if (node.left) traverse(node.left);
 
-            if (node.right) traverse(node.right);
-        };
+      if (node.right) traverse(node.right);
+    };
 
-        traverse(this.root);
+    traverse(this.root);
 
-        return outputArray;
+    return outputArray;
 
-    }
+  }
 
-    inOrder() {
+  inOrder() {
 
-        let outputArray = [];
+    let outputArray = [];
 
-        let traverse = (node) => {
+    let traverse = (node) => {
 
-            if (node.left) traverse(node.left);
+      if (node.left) traverse(node.left);
 
-            outputArray.push(node.value);
+      outputArray.push(node.value);
 
-            if (node.right) traverse(node.right);
-        };
+      if (node.right) traverse(node.right);
+    };
 
-        traverse(this.root);
+    traverse(this.root);
 
-        return outputArray;
+    return outputArray;
 
-    }
+  }
 
-    postOrder() {
+  postOrder() {
 
-        let outputArray = [];
+    let outputArray = [];
 
-        let traverse = (node) => {
+    let traverse = (node) => {
 
-            if (node.left) traverse(node.left);
+      if (node.left) traverse(node.left);
 
-            if (node.right) traverse(node.right);
+      if (node.right) traverse(node.right);
 
-            outputArray.push(node.value);
-        };
+      outputArray.push(node.value);
+    };
 
-        traverse(this.root);
+    traverse(this.root);
 
-        return outputArray;
+    return outputArray;
 
-    }
+  }
 }
 
 class BinarySearchTree {
 
-    constructor(root = null) {
+  constructor(root = null) {
 
-        this.root = root;
+    this.root = root;
 
+  }
+
+  add(value) {
+
+    if(!value){return '⚠️The passing value is not valid.⚠️';}
+
+    let valueOfNode = new Node(value);
+
+    let addToTree = (node, newValue) => {
+
+      if (node.value > newValue.value) {
+
+        if (!node.left) {
+          node.left = newValue;
+        } else {
+          addToTree(node.left, newValue);
+        }
+      }
+
+      if (node.value < newValue.value) {
+
+        if (!node.right) {
+          node.right = newValue;
+        } else {
+          addToTree(node.right, newValue);
+        }
+      }
+    };
+
+    if (!this.root) {
+      this.root = valueOfNode;
+      return this;
     }
 
-    add(value) {
+    addToTree(this.root, valueOfNode);
 
-        if(!value){return '⚠️The passing value is not valid.⚠️'};
+  }
 
-        let valueOfNode = new Node(value);
+  contains(value) {
 
-        let addToTree = (node, newValue) => {
+    if(!value){return '⚠️The passing value is not valid.⚠️';}
 
-            if (node.value > newValue.value) {
+    let isContain = false;
 
-                if (!node.left) {
-                    node.left = newValue;
-                } else {
-                    addToTree(node.left, newValue);
-                }
-            }
+    let treeIsContain = (node, valueToBeChecked) => {
 
-            if (node.value < newValue.value) {
+      if (!node) {
+        return false;
+      }
 
-                if (!node.right) {
-                    node.right = newValue;
-                } else {
-                    addToTree(node.right, newValue);
-                }
-            }
-        }
+      if (node.value > valueToBeChecked) {
+        treeIsContain(node.left, valueToBeChecked);
+      } else if (node.value < valueToBeChecked) {
+        treeIsContain(node.right, valueToBeChecked);
+      } else if (node.value === value) {
+        isContain = true;
+      }
 
-        if (!this.root) {
-            this.root = valueOfNode;
-            return this;
-        }
+    };
 
-        addToTree(this.root, valueOfNode);
+    treeIsContain(this.root, value);
 
-    }
+    return isContain;
 
-    contains(value) {
-
-        if(!value){return '⚠️The passing value is not valid.⚠️'};
-
-        let isContain = false;
-
-        let treeIsContain = (node, valueToBeChecked) => {
-
-            if (!node) {
-                return false;
-            }
-
-            if (node.value > valueToBeChecked) {
-                treeIsContain(node.left, valueToBeChecked);
-            } else if (node.value < valueToBeChecked) {
-                treeIsContain(node.right, valueToBeChecked)
-            } else if (node.value === value) {
-                isContain = true;
-            }
-
-        }
-
-        treeIsContain(this.root, value);
-
-        return isContain;
-
-    }
+  }
 
 }
 
 module.exports = {
-    BinaryTree: BinaryTree,
-    BinarySearchTree: BinarySearchTree,
-}
+  BinaryTree: BinaryTree,
+  BinarySearchTree: BinarySearchTree,
+};

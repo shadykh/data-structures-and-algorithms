@@ -1,30 +1,24 @@
-# ***Code Challenge: Class 15***
+# ***Code Challenge: Class 16***
 
-# ***Trees***
+# ***Maximum Value in a Binary Tree***
 
 ## Index
 
 - [Feature Tasks](#Feature-Tasks)
 - [Whiteboard Challenge Workflow](#Whiteboard-Challenge-Workflow)
-- [Code Challenge: Class 15](#Illustration-of-those-steps-and-the-result-of-this-Code-Challenge;-class-15)
+- [Code Challenge: Class 16](#Illustration-of-those-steps-and-the-result-of-this-Code-Challenge;-class-16)
   - [Whiteboard](#Whiteboard)
   - [Tests that applied](#Tests-that-applied)
   - [Run the test](#Run-the-test)
   - [Prove of testing](#Prove-of-testing)
   - [Testing Code](#Testing-Code)
   - [Approach & Efficiency](#Approach-&-Efficiency)
-- [Table of Contents](#Table-of-Contents)
 
 ---
 
 ## ***Feature Tasks***
 
-- [x] Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
-- [x] Create a BinaryTree class
-  - [x] Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately.
-- [x] Create a BinarySearchTree class
-  - [x] Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
-  - [x] Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+- [x] Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
 
 **[⬆ Back to Index](#index)**
 
@@ -58,47 +52,36 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 
 **[⬆ Back to Index](#index)**
 
-## ***Illustration of those steps and the result of this Code Challenge; class:10***
+## ***Illustration of those steps and the result of this Code Challenge; class:16***
 
 <br>
 
 ### **Whiteboard**
 
-- `trees` whiteboard:
-  - ![tree](../../../assets/tree.jpg)
+- `find-maximum-value` whiteboard:
+  - ![find-maximum-value](../../assets/find-maximum-value.jpg)
 
 **[⬆ Back to Index](#index)**
 
 #### ***Tests that applied***
 
-- BinaryTree & BinarySearchTree
-  - Can successfully instantiate an empty Binary Tree
-  - Can successfully instantiate an empty Binary Search Tree
-  - Can successfully instantiate a tree with a single root node
-  - Can successfully add a left child and right child to a single root node
-  - Can successfully return a collection from a preOrder traversal
-  - Can successfully return a collection from an inOrder traversal
-  - Can successfully return a collection from a postOrder traversal
-  - Can successfully add to a BinarySearchTree
-  - Can successfully check by contains if a value is in a BinarySearchTree
-
+- Maximum Value in a Binary Tree
+  - Can successfully instantiate a tree with a single root node and find the Maximum Value in it
+  - Can successfully find the Maximum Value in a Binary Tree
 - Edge Cases/ Custom Errors
-  - Calling add with null raises exception?
-  - Calling add with empty raises exception?
-  - Calling contains with null raises exception?
-  - Calling contains with empty raises exception?
+  - Calling a findMaximumValue in empty tree raises exception
 
 **[⬆ Back to Index](#index)**
 
 #### ***Prove of testing***
 
-- ![stacks-and-queues-test](../../../assets/tree-test.PNG)
+- ![find-maximum-value](../../assets/find-maximum-value-test.PNG)
 
 **[⬆ Back to Index](#index)**
 
 #### ***Testing Code***
 
-- [To See The Test Code Clicks Me 🧪](../../../__test__/tree.test.js)
+- [To See The Test Code Clicks Me 🧪](../../__test__/find-maximum-value.test.js)
 
 **[⬆ Back to Index](#index)**
 
@@ -111,24 +94,6 @@ The steps in this document are meant to show you one solid workflow. It’s a st
 <br>
 
 **[⬆ Back to Index](#index)**
+
 ---
 
-<br>
-
-<br>
-
-## Table of Contents
-
-<br>
-
-|  **Code Challenge** </span> |  **Title**  |   **ToGo** |
-| ----------- | ----------- | ----------- |
-| Main | Back to the Main | [Clicks me](../../../README.md) |
-| Class: 01 | Reverse an array | [Clicks me](/Challenges/array-reverse/README.md) |
-| Class: 02 | Array Shift | [Clicks me](/Challenges/array-shift/README.md) |
-| Class: 03 | Array Binary Search | [Clicks me](/Challenges/array-binary-search/README.md) |
-| Class: 05, 06 & 07 | LinkedList | [Clicks me](../linkedList/README.md) |
-| Class: 10| Stacks and Queues | [Clicks me](../stacksAndQueues/README.md) |
-| Class: 11 | PseudoQueue | [Clicks me](/Challenges/queueWithStacks/README.md) |
-| Class: 12 | Animal Shelter | [Clicks me](/Challenges/fifoAnimalShelter/README.md) |
-| Class: 13 | Multi Bracket Validation| [Clicks me](/Challenges/multiBracketValidation/README.md) |
