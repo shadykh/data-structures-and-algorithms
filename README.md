@@ -19,3 +19,4 @@
 | Class: 15 | Binary Tree & BinarySearchTree | [Clicks me](/Data-Structures/JavaScript/tree/README.md) |
 | Class: 16 | Maximum Value in a Binary Tree | [Clicks me](/Challenges/findMaximumBinaryTree/README.md) |
 | Class: 17 | Breadth-first Traversal | [Clicks me](/Challenges/breadthFirst/README.md) |
+| Class: 18 | FizzBuzz Tree | [Clicks me](/Challenges/fizzBuzzTree/README.md) |
