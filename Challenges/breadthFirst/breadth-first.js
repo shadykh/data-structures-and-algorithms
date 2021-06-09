@@ -80,24 +80,36 @@ class BinaryTree {
     }
 
     let outputArray = [];
+    let outputArrayIndex = 0;
 
-    let treeNode = [this.root]; 
+    let treeNode = [this.root];
+    let treeNodeIndex = 0; 
 
-    while (treeNode.length > 0) { 
+    while (treeNode[outputArrayIndex]) { 
 
-      let shiftedNode = treeNode.shift(); 
-      
-      outputArray.push(shiftedNode.value); 
+      //let shiftedNode = treeNode.shift(); 
+      let shiftedNode = treeNode[outputArrayIndex];
+
+      //outputArray.push(shiftedNode.value); 
+      outputArray[outputArrayIndex] = shiftedNode.value;
 
       if (shiftedNode.left) {
-        treeNode.push(shiftedNode.left);
+        //treeNode.push(shiftedNode.left);
+        treeNode[++treeNodeIndex] = shiftedNode.left;
       }
       if (shiftedNode.right) {
-        treeNode.push(shiftedNode.right);
+        //treeNode.push(shiftedNode.right);
+        treeNode[++treeNodeIndex] = shiftedNode.right;
       }
+
+      delete treeNode[outputArrayIndex];
+
+      outputArrayIndex++;
 
     }
 
+    treeNode = [];
+    
     return outputArray;
   }
 }
