@@ -139,6 +139,42 @@ class BinarySearchTree {
     return isContain;
 
   }
+  
+  sumOdd(){
+
+        
+    if (!this.root){
+      return 'The Tree is empty !!';
+    }
+
+    let node = this.root;
+
+    let sum = 0;
+
+    let  findOdd = (node)=>{
+
+      if(node){
+
+        findOdd(node.left);
+
+        if(node.value % 2 === 1){
+
+          sum = sum+node.value;
+
+        }
+
+        findOdd(node.right);
+
+      }
+
+    };
+
+    findOdd(node);
+
+    return sum;  
+
+  }
+  
 
 }
 

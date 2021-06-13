@@ -2,9 +2,9 @@
 
 'use strict';
 
-const Node = require('../Data-Structures/JavaScript/tree/node.js');
+const Node = require('../Challenges/fizzBuzzTree/node.js');
 
-const Binary = require('../Data-Structures/JavaScript/tree/tree.js');
+const Tree = require('../Challenges/fizzBuzzTree/tree.js');
 
 const FizzBuzzTree = require('../Challenges/fizzBuzzTree/fizz-buzz-tree.js');
 
@@ -28,31 +28,12 @@ let tree = null;
 describe('🧪TEST🧪: Code Challenge Class 18', () => {
 
   describe('🧪TEST🧪: FizzBuzz Tree', () => {
-  
-    beforeAll(() => {
-  
-      let one = new Node(11);
-      let two = new Node(33);
-      let three = new Node(55);
-      let four = new Node(150);
-      let five = new Node(17);
-      let six = new Node(99);
-  
-      one.left = two;
-      one.right = three;
-      two.left = four;
-      three.left = six;
-      three.right = five;
-  
-      tree = new Binary.BinaryTree(one);
-  
-    });
 
     it('TEST 1 🧪: Can successfully return the number [2] as sting when call the FizzBuzzTree function', () => {
 
       let root = new Node(2);
   
-      let singleRootNodeTree = new Binary.BinaryTree(root);
+      let singleRootNodeTree = new Tree(root);
 
       let FizzdBuzzdTree = FizzBuzzTree(singleRootNodeTree);
   
@@ -63,7 +44,7 @@ describe('🧪TEST🧪: Code Challenge Class 18', () => {
 
       let root = new Node(3);
     
-      let singleRootNodeTree = new Binary.BinaryTree(root);
+      let singleRootNodeTree = new Tree(root);
   
       let FizzdBuzzdTree = FizzBuzzTree(singleRootNodeTree);
     
@@ -74,7 +55,7 @@ describe('🧪TEST🧪: Code Challenge Class 18', () => {
 
       let root = new Node(5);
     
-      let singleRootNodeTree = new Binary.BinaryTree(root);
+      let singleRootNodeTree = new Tree(root);
   
       let FizzdBuzzdTree = FizzBuzzTree(singleRootNodeTree);
     
@@ -85,7 +66,7 @@ describe('🧪TEST🧪: Code Challenge Class 18', () => {
 
       let root = new Node(15);
     
-      let singleRootNodeTree = new Binary.BinaryTree(root);
+      let singleRootNodeTree = new Tree(root);
   
       let FizzdBuzzdTree = FizzBuzzTree(singleRootNodeTree);
     
@@ -93,11 +74,28 @@ describe('🧪TEST🧪: Code Challenge Class 18', () => {
     });
 
     it('TEST 5 🧪: Can successfully return the tree  as FizzBuzz tree when call the FizzBuzzTree function', () => {
+      
+      let one = new Node(11);
+      let two = new Node(33);
+      let three = new Node(55);
+      let four = new Node(150);
+      let five = new Node(17);
   
-      let FizzdBuzzdTree = FizzBuzzTree(tree);
-    
-      expect(FizzdBuzzdTree.preOrder()).toEqual( ['11', 'Fizz', 'FizzBuzz', 'Buzz', 'Fizz', '17']);
-      expect(tree.preOrder()).toEqual( ['11', 'Fizz', 'FizzBuzz', 'Buzz', 'Fizz', '17']);
+      one.children.push(four);
+      four.children.push(three, two, five);
+  
+      let newTree = new Tree(one);
+
+      let FizzdBuzzdTree = FizzBuzzTree(newTree);
+
+      let expectedArray = ['11', 'FizzBuzz', 'Buzz', 'Fizz', '17'];
+
+      expect(FizzdBuzzdTree.root.value).toEqual(expectedArray[0]);
+      expect(FizzdBuzzdTree.root.children[0].value).toEqual(expectedArray[1]);
+      expect(FizzdBuzzdTree.root.children[0].children[0].value).toEqual(expectedArray[2]);
+      expect(FizzdBuzzdTree.root.children[0].children[1].value).toEqual(expectedArray[3]);
+      expect(FizzdBuzzdTree.root.children[0].children[2].value).toEqual(expectedArray[4]);
+
     });
 
   
@@ -106,7 +104,7 @@ describe('🧪TEST🧪: Code Challenge Class 18', () => {
       it('TEST 1 🧪: Calling a FizzBuzzTree with empty tree raises exception? ->The Tree is empty !!<-', () => {
         try {
   
-          let emptyTree = new Binary.BinaryTree();
+          let emptyTree = new Tree();
 
           FizzBuzzTree(emptyTree);
       
