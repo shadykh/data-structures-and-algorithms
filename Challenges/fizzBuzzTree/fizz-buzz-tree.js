@@ -1,5 +1,8 @@
 'use strict';
 
+const Node = require('./node.js');
+
+const Tree = require('./tree.js');
 
 function FizzBuzzTree (tree) {
 
@@ -7,36 +10,38 @@ function FizzBuzzTree (tree) {
     return 'The Tree is empty !!';
   }
 
-  let newTree = tree;
+  let newTree = new Tree();
 
   let fizzingBuzzing = (node)=>{
 
+    let treeNode = new Node(null);
+
     if (node.value % 3 === 0 && node.value % 5 === 0){
 
-      node.value = 'FizzBuzz';
+      treeNode.value = 'FizzBuzz';
 
     } else if (node.value % 3 === 0){
 
-      node.value = 'Fizz';
+      treeNode.value = 'Fizz';
 
     } else if (node.value % 5 === 0){
 
-      node.value = 'Buzz';
+      treeNode.value = 'Buzz';
 
     } else {
-      node.value = `${node.value}`;
+      treeNode.value = `${node.value}`;
     }
 
-    if (node.left) {
-      fizzingBuzzing(node.left);
+    for (let i = 0; i < node.children.length; i++){
+
+      treeNode.children.push(fizzingBuzzing(node.children[i]));
     }
 
-    if (node.right) {
-      fizzingBuzzing(node.right);
-    }
+    return treeNode;
+
   }; 
 
-  fizzingBuzzing(newTree.root);
+  newTree.root = fizzingBuzzing(tree.root);
 
 
   return newTree;
