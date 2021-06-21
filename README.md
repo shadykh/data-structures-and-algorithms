@@ -21,3 +21,4 @@
 | Class: 17 | Breadth-first Traversal | [Clicks me](/Challenges/breadthFirst/README.md) |
 | Class: 18 | FizzBuzz Tree | [Clicks me](/Challenges/fizzBuzzTree/README.md) |
 | Class: 26 | Insertion Sort | [Clicks me](/Challenges/Insertion-Sort/README.md) |
+| Class: 27 | Merge Sort | [Clicks me](/Challenges/mergeSort/README.md) |
