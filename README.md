@@ -23,3 +23,4 @@
 | Class: 26 | Insertion Sort | [Clicks me](/Challenges/Insertion-Sort/README.md) |
 | Class: 27 | Merge Sort | [Clicks me](/Challenges/mergeSort/README.md) |
 | Class: 28 | Quick Sort | [Clicks me](/Challenges/quickSort/README.md) |
+| Class: 30 | Hash Table | [Clicks me](/Challenges/hashTable/README.md) |
