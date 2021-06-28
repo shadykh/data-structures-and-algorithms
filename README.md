@@ -25,3 +25,4 @@
 | Class: 28 | Quick Sort | [Clicks me](/Challenges/quickSort/README.md) |
 | Class: 30 | Hash Table | [Clicks me](/Challenges/hashTable/README.md) |
 | Class: 31 | Hashmap Repeated Word | [Clicks me](/Challenges/hashmapRepeatedWord/README.md) |
+| Class: 32 | Hashmap Tree Intersection | [Clicks me](/Challenges/hashmapTreeIntersection/README.md) |
