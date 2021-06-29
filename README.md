@@ -26,3 +26,4 @@
 | Class: 30 | Hash Table | [Clicks me](/Challenges/hashTable/README.md) |
 | Class: 31 | Hashmap Repeated Word | [Clicks me](/Challenges/hashmapRepeatedWord/README.md) |
 | Class: 32 | Hashmap Tree Intersection | [Clicks me](/Challenges/hashmapTreeIntersection/README.md) |
+| Class: 33 | Hashmap Left Join | [Clicks me](/Challenges/hashmapLeftJoin/README.md) |
