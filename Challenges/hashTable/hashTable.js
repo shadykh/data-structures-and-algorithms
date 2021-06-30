@@ -12,6 +12,7 @@ class HashTable {
 
         this.storage = new Array(size);
         this.size = size;
+        this.keys = [];
     }
 
     hash(key) {
@@ -41,6 +42,7 @@ class HashTable {
 
             this.storage[hash].add([key, value]);
         }
+        this.keys.push(key);
     }
 
     get(key) {
